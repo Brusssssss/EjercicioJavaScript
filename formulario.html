@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="javascript.js"></script>
+    <style>
+        textarea{
+            width: 100%;
+            max-width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+            resize: none;
+        }
+    </style>
+    <style>body{
+        background-color: rgb(135, 233, 233);
+    }</style>
+    <title>Formulario Chile Limpio</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Formulario Chile Lindo</h2>
+        <form action="" method="post" name="datos">
+            <div class="form-group">
+                <label for="rut">Rut:</label>
+                <input type="text" id="rut" name="rut" class="form-control" minlength="9" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <label for="nom">Nombre:</label>
+                <input type="text" id="nom" name="nom" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="apep">Apellido Paterno:</label>
+                <input type="text" id="apep" name="apep" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="apem">Apellido Materno:</label>
+                <input type="text" id="apem" name="apem" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="corre">Correo:</label>
+                <input type="text" id="correo" name="correo" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <label for="fecha">Seleccione una fecha:</label>
+            <br>
+            <input type="date" id="fecha" name="fecha">
+            <div class="form-group"><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" class="form-control" min="18" max="35" required>
+            </div>
+            <div class="form-group"><br>
+                <label for="profesion">Profesion:</label>
+                <input type="text" id="profesion" name="profesion" class="form-control" min="18" max="35" required>
+            </div>
+            <div class="form-group">
+                <label for="motivacion">Motivacion para postular al trabajo:</label>
+                <select class="form-control" id="motivacion">
+                    <option value="error">Seleccione su motivacion</option>
+                    <option value="Me interesa el rubro ya que soy muy experimentado uwu">Me interesa el rubro ya que soy muy experimentado uwu</option>
+                    <option value="Tengo capacidades para matar al cedre">Tengo capacidades para matar al cedre</option>
+                    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select class="form-control" id="genero">
+                    <option value="error">Seleccione su genero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="number" id="celular" name="celular" class="form-control" minlength="9" maxlength="12" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="carta">Resultados:</label>
+                <br>
+                <textarea name="carta" id="carta" readonly></textarea>
+            </div>
+            <input type="button" value="Enviar" onclick="mostrarResultados()" class="btn btn-outline-danger">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
