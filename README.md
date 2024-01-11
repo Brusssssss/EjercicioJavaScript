@@ -1,0 +1,2 @@
+# EjercicioJavaScript
+RUTINA DE EJERCICIO DE POSTULACIÓN
